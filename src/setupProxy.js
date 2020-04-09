@@ -4,7 +4,7 @@ module.exports = function (app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'http://10.2.3.103:55555',
+      target: 'https://my-json-server.typicode.com/gary-Shen/table-interview',
       changeOrigin: true,
       pathRewrite: {
         '^/api': '/'
